@@ -11,8 +11,7 @@ import {
 
 import NextLink from "next/link";
 
-import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-
+import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
 const Footer = () => (
   <Box
     as="footer"
@@ -26,72 +25,68 @@ const Footer = () => (
       direction="row"
       spacing="6"
       align="center"
-      alignSelf={"center"}
-      justify="center"
+      justify="space-between" // Align items to the ends
       textAlign="center"
     >
-      <ButtonGroup variant="default">
+      <Text fontSize="11px" fontWeight={"medium"}>
+        &copy; Babacar Diop {new Date().getFullYear()}
+      </Text>
+      <Text fontSize="11px" fontWeight={"medium"}>
+        &copy; Babacar Diop {new Date().getFullYear()} —
+        <Link href="https://github.com/princemuichkine" isExternal>
+          This website is open-source
+        </Link>
+      </Text>
+      <ButtonGroup variant="default" spacing="0"> {/* Reduced spacing */}
         <IconButton
           as="a"
-          href="mailto:erickpmotta@gmail.com"
-          aria-label="Email: erickpmotta@gmail.com"
-          icon={<FaEnvelope fontSize="20px" />}
+          href="mailto:bmamour.diop@icloud.com"
+          aria-label="Email me"
+          icon={<FaEnvelope fontSize="14px" />} // Adjusted size
+          borderRadius="0" // Square icon
+          background={"none"}
+          _hover={{ background: "none" }}
+          m={0} // Remove margin
+          p={0} // Remove padding
         />
         <IconButton
           as="a"
-          variant={"default"}
-          href="https://www.instagram.com/erickrozza/"
-          aria-label="instagram"
-          icon={<FaInstagram fontSize="20px" />}
+          href="https://www.x.com/bm_diop"
+          aria-label="X/Twitter"
+          icon={<FaTwitter fontSize="14px" />} // Adjusted size
+          borderRadius="0" // Square icon
+          background={"none"}
+          _hover={{ background: "none" }}
+          m={0} // Remove margin
+          p={0} // Remove padding
         />
         <IconButton
           as="a"
-          href="https://www.linkedin.com/in/erick-rosa-dev/"
+          href="https://www.linkedin.com/in/bm_diop"
           aria-label="Linkedin"
-          icon={<FaLinkedin fontSize="20px" />}
+          icon={<FaLinkedin fontSize="14px" />} // Adjusted size
+          borderRadius="0" // Square icon
+          background={"none"}
+          _hover={{ background: "none" }}
+          m={0} // Remove margin
+          p={0} // Remove padding
         />
         <IconButton
-          as="a"
-          href="https://github.com/RosaErick"
-          aria-label="Github"
-          icon={<FaGithub fontSize="20px" />}
+          as={Link}
+          borderRadius="0" // Square icon
+          background={"none"}
+          _hover={{ background: "none" }}
+          aria-label="Github Repo"
+          rel="noopener"
+          href="https://github.com/princemuichkine"
+          isExternal
+          icon={<FaGithub fontSize="13px" />}
+          m={0} // Remove margin
+          p={0} // Remove padding
         />
       </ButtonGroup>
     </Stack>
-    {/* <Flex
-      justifyContent={"center"}
-      fontWeight="bold"
-      fontSize={9}
-      fontFamily={"monospace"}
-      gap="10px"
-    >
-      <NextLink href="/blog">Blog</NextLink>
-      <NextLink href="/snippets">Snippets</NextLink>
-      <NextLink
-        href="https://erickrosa.dev/images/Erick_Rosa_CV_2022.pdf"
-        passHref
-      >
-        Resume
-      </NextLink>
-      <NextLink href="/About">About</NextLink>
-    </Flex> */}
     <Divider pt={0} w="100%" />
-    <Stack direction="row" align="center" justify="space-between" pt={5}>
-      <Text fontSize="11px" fontWeight={"medium"}>
-        &copy; Erick Rosa {new Date().getFullYear()}
-      </Text>
-      <IconButton
-        as={Link}
-        rounded="md"
-        background={"none"}
-        _hover={{ background: "none" }}
-        aria-label="Github Repo"
-        rel="noopener"
-        href="https://github.com/RosaErick/erickrosa.dev"
-        isExternal
-        icon={<FaGithub fontSize="18px" />}
-      />
-    </Stack>
   </Box>
 );
 

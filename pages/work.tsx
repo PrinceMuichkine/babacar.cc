@@ -23,8 +23,9 @@ export default function WorkPage() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.4 }}
+      style={{ position: "relative", width: "100%", minHeight: "100vh", overflowY: "auto" }} // Adjusted height and overflow
     >
-      <Box as="section">
+      <Box as="section" style={{ position: "relative", zIndex: 10 }}>
         <Heading as="h1" fontSize="2xl" fontWeight="medium">
           work
         </Heading>
@@ -38,11 +39,8 @@ export default function WorkPage() {
 }"
         ></Box>
         <VStack spacing={6} align="stretch">
-          <Text fontSize="lg" mt={4}>
-            I have been working as a software engineer for the past 3 years. I
-            have worked with a variety of technologies and programming languages
-            and have experience in developing software applications for
-            different industries and sectors.
+          <Text fontSize="lg" mt={4} textAlign="justify">
+            I have been working as a <Text as="span" fontWeight="bold" fontStyle="italic">tech business operator</Text> for the past 5 years. My experience spans various industries and sectors, where I have gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
           </Text>
           <Divider borderColor="gray.200" />
           <Heading
@@ -52,40 +50,38 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            Proffer
+            <Link href="https://www.telnyx.com" isExternal>
+              Telnyx
+            </Link>
           </Heading>
-          <Text fontSize="sm" color={useColorModeValue("gray.600", "gray.400")}>
-            software developer, 2022 — present
+          <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+            Account Executive, 2022 - 2023
           </Text>
-          <Text>
-            Proffer develops a pricing software as a SaaS model, leveraging
-            artificial intelligence and machine learning. I work with a diverse
-            array of technologies and programming languages, including
-            TypeScript, Python, React, Next.js, Node.js, Postgres, MongoDB,
-            Docker and some AWS services like Lambda, Ec2, S3, Amplify, and
-            others.
-          </Text>
-          <UnorderedList spacing={3} px={6}>
+          <UnorderedList spacing={3} px={6} color={useColorModeValue("gray.600", "gray.400")}>
             <ListItem>
-              My daily responsibilities involve collaborative efforts as part of
-              geographically distributed teams, working in sync with the entire
-              group to achieve our collective goals.
+              Worked on securing commercial contracts with prominent companies.
             </ListItem>
             <ListItem>
-              In my role, I lead the frontend development team, focusing on the
-              enhancement and introduction of new features within the software
-              and development environments, as well as in the consultancy
-              services provided by the company. I also contribute to the
-              development of APIs using Node.js and Python within the backend
-              team.
+              Successfully generated significant monthly recurring revenue (MRR).
+            </ListItem>
+            <ListItem>
+              Specialized in selling consumption-based communication products such as SIP Trunking, SMS API, storage, and more.
             </ListItem>
           </UnorderedList>
-          <Text>
-            Since joining Proffer, I have been able to contribute to the
-            development of new features and improvements to the software , which
-            has allowed the company to expand its customer base and improve its
-            services and has led to a more efficient and effective software
-            application.
+          <Divider borderColor="gray.200" />
+          <Heading
+            as="h2"
+            fontSize="xl"
+            mb={1}
+            fontWeight="medium"
+            letterSpacing="tighter"
+          >
+            <Link href="https://www.afridoctor.com" isExternal>
+              Afridoctor
+            </Link>
+          </Heading>
+          <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+            Account Manager, 2022
           </Text>
           <Divider borderColor="gray.200" />
           <Heading
@@ -95,35 +91,57 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            Mundiware
+            <Link href="https://www.iziwork.com" isExternal>
+              iziwork
+            </Link>
           </Heading>
-          <Text fontSize="sm" color={useColorModeValue("gray.600", "gray.400")}>
-            frontend developer, 2021 — 2022
+          <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+            Lead Generation Specialist, 2021
           </Text>
-          <Text>
-            I worked as a Frontend Developer focused on creating websites and
-            applications for various newspapers and news portals. Mundiware is a
-            technology company specializing in systems for newspapers and in the
-            development of customized solutions aimed at optimizing production
-            stages.
+          <Divider borderColor="gray.200" />
+          <Heading
+            as="h2"
+            fontSize="xl"
+            mb={1}
+            fontWeight="medium"
+            letterSpacing="tighter"
+          >
+            <Link href="https://www.pageexecutive.com" isExternal>
+              Page Executive
+            </Link>
+          </Heading>
+          <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+            Support to the Managing Partner, 2020 - 2021
           </Text>
-          <UnorderedList spacing={3} px={6}>
-            <ListItem>
-              I started as a trainee and was promoted to a full-time position
-              after 4 months. I worked on the development of websites and
-              applications for various newspapers and news portals.
-            </ListItem>
-            <ListItem>
-              I worked with a variety of projects, including legacy projects
-              with technologies such as jQuery and vanilla-js and was
-              responsible for the upgrade and maintenance of these projects.
-            </ListItem>
-          </UnorderedList>
-          <Text>
-            This was my first job as a developer, and I learned a lot about web
-            development and software engineering in a brief period. I was able
-            to develop my skills in frontend development and learn about the
-            importance of teamwork and collaboration in software development.
+          <Divider borderColor="gray.200" />
+          <Heading
+            as="h2"
+            fontSize="xl"
+            mb={1}
+            fontWeight="medium"
+            letterSpacing="tighter"
+          >
+            <Link href="https://au.int" isExternal>
+              African Union
+            </Link>
+          </Heading>
+          <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
+            Intern — Infrastructure and Energy, 2019
+          </Text>
+          <Divider borderColor="gray.200" />
+          <Heading
+            as="h2"
+            fontSize="xl"
+            mb={1}
+            fontWeight="medium"
+            letterSpacing="tighter"
+          >
+            <Link href="https://www.linkedin.com" isExternal>
+              Other experience
+            </Link>
+          </Heading>
+          <Text fontSize="sm" color={useColorModeValue("black", "whiteAlpha.900")}>
+            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own start-ups and other indie projects.
           </Text>
         </VStack>
       </Box>

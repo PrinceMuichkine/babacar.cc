@@ -23,9 +23,10 @@ interface ProjectCardProps {
     stargazersUrl: string;
     languageColor?: string;
     language?: string;
+    style?: React.CSSProperties; // Add this line to accept style prop
 }
 
-export default function ProjectCard({ title, description, repoHref, demoHref, languageColor, language, starCount, stargazersUrl }: ProjectCardProps) {
+export default function ProjectCard({ title, description, repoHref, demoHref, languageColor, language, starCount, stargazersUrl, style }: ProjectCardProps) {
     const [opacity, setOpacity] = useState(0)
     const [lineColor, setLineColor] = useState("blue.500")
     const { colorMode } = useColorMode()
@@ -51,6 +52,7 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
             onMouseOver={() => { setOpacity(1), setLineColor(languageColor) }}
             onMouseLeave={() => { setOpacity(0), setLineColor("blue.500") }}
             mt="20px"
+            style={style} // Apply the style prop here
         >
             <Flex p={[5, 15, 25]} flexDir="column" justify="space-between" h="100%" minHeight="280px">
                 <Box>
