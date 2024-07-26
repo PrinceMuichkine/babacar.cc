@@ -145,7 +145,7 @@ export default function WorkPage() {
             and more...
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
-            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own start-ups and other indie projects.
+            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own products and other indie projects.
           </Text>
         </VStack>
       </Box>
