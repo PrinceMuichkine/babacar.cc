@@ -63,7 +63,7 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
                     <Box
                         h="2px"
                         w="100%"
-                        bgColor={useColorModeValue("blue.300", "red.500")}
+                        bgColor={useColorModeValue("red.500", "blue.300")}
                         transition="background-color .5s ease-in-out"
                         mt={3}
                         mb={5}

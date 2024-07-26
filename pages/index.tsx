@@ -8,7 +8,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import Paragraph from "../layouts/Paragraph";
 import Script from "next/script";
 import ProjectCard from "../components/projects/ProjectCard-2";
