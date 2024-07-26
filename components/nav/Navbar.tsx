@@ -65,14 +65,8 @@ const Navbar = () => {
             <LinkItem href="/" path={path} target="_self">
               home
             </LinkItem>
-            <LinkItem target="_self" href="/projects" path={path}>
-              projects
-            </LinkItem>
             <LinkItem target="_self" href="/work" path={path}>
               work
-            </LinkItem>
-            <LinkItem target="_self" href="/guestbook" path={path}>
-              guestbook
             </LinkItem>
           </Stack>
         </Flex>

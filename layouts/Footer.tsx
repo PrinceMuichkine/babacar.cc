@@ -9,8 +9,6 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-import NextLink from "next/link";
-
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
 const Footer = () => (
   <Box
@@ -29,10 +27,7 @@ const Footer = () => (
       textAlign="center"
     >
       <Text fontSize="11px" fontWeight={"medium"}>
-        &copy; Babacar Diop {new Date().getFullYear()}
-      </Text>
-      <Text fontSize="11px" fontWeight={"medium"}>
-        &copy; Babacar Diop {new Date().getFullYear()} —
+        &copy; Babacar Diop {new Date().getFullYear()} — {/* Added space before the dash */}
         <Link href="https://github.com/princemuichkine" isExternal>
           This website is open-source
         </Link>

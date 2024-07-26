@@ -40,7 +40,7 @@ export default function WorkPage() {
         ></Box>
         <VStack spacing={6} align="stretch">
           <Text fontSize="lg" mt={4} textAlign="justify">
-            I have been working as a <Text as="span" fontWeight="bold" fontStyle="italic">tech business operator</Text> for the past 5 years. My experience spans various industries and sectors, where I have gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
+            I've been working as a <Text as="span" fontWeight="bold" fontStyle="italic">tech business operator </Text>  for the past 4 years. My experience spans various industries and sectors, where I've gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
           </Text>
           <Divider borderColor="gray.200" />
           <Heading
@@ -57,17 +57,6 @@ export default function WorkPage() {
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
             Account Executive, 2022 - 2023
           </Text>
-          <UnorderedList spacing={3} px={6} color={useColorModeValue("gray.600", "gray.400")}>
-            <ListItem>
-              Worked on securing commercial contracts with prominent companies.
-            </ListItem>
-            <ListItem>
-              Successfully generated significant monthly recurring revenue (MRR).
-            </ListItem>
-            <ListItem>
-              Specialized in selling consumption-based communication products such as SIP Trunking, SMS API, storage, and more.
-            </ListItem>
-          </UnorderedList>
           <Divider borderColor="gray.200" />
           <Heading
             as="h2"
@@ -111,7 +100,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Support to the Managing Partner, 2020 - 2021
+            Project intern, 2020
           </Text>
           <Divider borderColor="gray.200" />
           <Heading
@@ -140,7 +129,7 @@ export default function WorkPage() {
               Other experience
             </Link>
           </Heading>
-          <Text fontSize="sm" color={useColorModeValue("black", "whiteAlpha.900")}>
+          <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
             Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own start-ups and other indie projects.
           </Text>
         </VStack>

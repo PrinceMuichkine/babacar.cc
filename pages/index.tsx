@@ -78,7 +78,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              I'm a 24-year-old self-taught web developer currently based in West Africa, where I am currently volunteering. Passionate about open-source development, I enjoy building projects using JavaScript, Go, and Python. These languages, along with their communities and ecosystems, drive my enthusiasm for coding and continuous learning.
+              I'm a 24-year-old self-taught web developer currently based in West Africa, where I am volunteering. Passionate about open-source development, I enjoy building projects using JavaScript, Go, and Python. These languages, along with their communities and ecosystems, drive my enthusiasm for coding and continuous learning.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -108,7 +108,9 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working on my projects, I love surfing, traveling, volunteering, reading, and engaging in conversations about art, music, history, and philosophy. Additionally, I enjoy practicing martial arts and boxing, which keeps me disciplined and focused.
+              When I'm not working on my projects, I love surfing, traveling, volunteering, reading, and engaging in conversations about art, music, history, and philosophy.
+              <Box height="10px" /> {/* Use Box for spacing */}
+              In my spare time, I enjoy practicing martial arts and boxing, which keep me disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
