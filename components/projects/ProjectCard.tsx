@@ -10,15 +10,19 @@ import {
     Button,
     useColorModeValue,
 } from '@chakra-ui/react'
-
 import { ExternalLinkIcon, ViewIcon } from '@chakra-ui/icons'
+
+interface Language {
+    name: string;
+    color: string;
+}
 
 interface ProjectCardProps {
     title: string;
     description: string;
     repoHref: string;
     demoHref: string;
-    languages: { name: string; color: string }[];
+    languages: Language[];
     starCount: number;
     stargazersUrl: string;
     languageColor?: string;
@@ -55,7 +59,16 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
             <Flex p={[5, 15, 25]} flexDir="column" justify="space-between" h="100%" minHeight="280px">
                 <Box>
                     <Heading as="h3" size="md" fontWeight="semibold" mb={2}>{title}</Heading>
-                    <Box h={1} w="50%" bgColor={useColorModeValue("black", "pink")} transition="background-color .5s ease-in-out" mb={4} mx="auto" />
+                    {/* Updated the line style */}
+                    <Box
+                        h="2px"
+                        w="100%"
+                        bgColor={useColorModeValue("blue.300", "red.500")}
+                        transition="background-color .5s ease-in-out"
+                        mt={3}
+                        mb={5}
+                        mx="auto"
+                    />
                     <Text fontSize="medium" color={colorSecondary[colorMode]} mt={4}>{description}</Text> {/* Added margin-top */}
                 </Box>
                 <Flex justify="space-between" mt={2}>

@@ -4,9 +4,7 @@ import {
   Link,
   VStack,
   Heading,
-  ListItem,
   Divider,
-  UnorderedList,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Metadata } from "next";
@@ -18,6 +16,22 @@ export const metadata: Metadata = {
 };
 
 export default function WorkPage() {
+  // Define the divider color based on the color mode
+  const dividerColor = useColorModeValue("gray.400", "gray.600");
+
+  // Define the bullet point style
+  const bulletPoint = (
+    <Box
+      as="span"
+      display="inline-block"
+      width="8px"
+      height="8px"
+      borderRadius="50%"
+      backgroundColor={useColorModeValue("gray.600", "gray.400")}
+      mx={2}
+    />
+  );
+
   return (
     <motion.div
       initial={{ y: -20, opacity: 0 }}
@@ -42,7 +56,7 @@ export default function WorkPage() {
           <Text fontSize="lg" mt={4} textAlign="justify">
             I've been working as a <Text as="span" fontWeight="bold" fontStyle="italic">tech business operator </Text>  for the past 4 years. My experience spans various industries and sectors, where I've gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -55,9 +69,9 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Account Executive, 2022 - 2023
+            Account Executive {bulletPoint} Amsterdam, Netherlands {bulletPoint} 2022 - 2023
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -70,9 +84,9 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Account Manager, 2022
+            Account Manager {bulletPoint} Accra, Ghana {bulletPoint} 2022
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -85,9 +99,9 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Lead Generation Specialist, 2021
+            Intern — Partnerships {bulletPoint} Paris, France {bulletPoint} 2021
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -100,9 +114,9 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Project intern, 2020
+            Intern — Projects {bulletPoint} Brussels, Belgium {bulletPoint}  2020
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -115,9 +129,9 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Intern — Infrastructure and Energy, 2019
+            Intern — Infrastructure and Energy {bulletPoint} Addis Ababa, Ethiopia {bulletPoint} 2019
           </Text>
-          <Divider borderColor="gray.200" />
+          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
             as="h2"
             fontSize="xl"
@@ -125,9 +139,7 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            <Link href="https://www.linkedin.com" isExternal>
-              Other experience
-            </Link>
+            Other experience
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
             Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own start-ups and other indie projects.

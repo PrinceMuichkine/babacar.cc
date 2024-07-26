@@ -108,9 +108,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working on my projects, I love surfing, traveling, volunteering, reading, and engaging in conversations about art, music, history, and philosophy.
-              <Box height="10px" /> {/* Use Box for spacing */}
-              In my spare time, I enjoy practicing martial arts and boxing, which keep me disciplined and focused.
+              When I'm not working on my projects, I love surfing, traveling, reading, and engaging in conversations about art, tech, history, and business. À mes heures perdues, I enjoy running, practicing martial arts and boxing — all of which keep me focused.
             </Paragraph>
           </Flex>
         </Flex>
@@ -153,7 +151,8 @@ export default function Home() {
                 backgroundImage: "url('/images/africanledger.png')", // Corrected path
                 backgroundSize: "cover", // Ensure the image covers the entire card
                 backgroundPosition: "center", // Center the image
-                color: "white" // Ensure text is always white
+                color: "white", // Ensure text is always white
+                backgroundColor: "rgba(0, 0, 0, 0.5)" // Add semi-transparent black background
               }}
             />
 
@@ -173,7 +172,8 @@ export default function Home() {
                 backgroundSize: "cover", // Ensure the image covers the entire card
                 backgroundPosition: "center", // Center the image
                 color: "white", // Ensure text is always white
-                border: "none" // Remove border
+                border: "none", // Remove border
+                backgroundColor: "rgba(0, 0, 0, 0.5)" // Add semi-transparent black background
               }}
             />
           </SimpleGrid>

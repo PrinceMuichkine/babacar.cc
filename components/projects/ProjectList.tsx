@@ -30,10 +30,16 @@ function getLanguageColor(language: any) {
       return "#701516";
     case "bash":
       return "#89e051";
-
     default:
       return "#000000";
   }
+}
+
+function transformLanguages(languages: string[] = []): { name: string; color: string }[] {
+  return languages.map((language) => ({
+    name: language,
+    color: getLanguageColor(language),
+  }));
 }
 
 const ProjectListFull = () => {
@@ -73,9 +79,6 @@ const ProjectListFull = () => {
           .includes(searchValue.toLowerCase()) ||
         project?.language?.toLowerCase().includes(searchValue.toLowerCase())
     )
-
-    //sort repos by created_at
-
     .sort((a: { created_at: string }, b: { created_at: string }) => {
       return (
         new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
@@ -108,6 +111,7 @@ const ProjectListFull = () => {
               language: string;
               stars: number;
               stargazers_url: string;
+              languages: string[]; // This is the original array of strings
             },
             index: Key
           ) => (
@@ -121,6 +125,7 @@ const ProjectListFull = () => {
               language={p.language}
               starCount={p.stars}
               stargazersUrl={p.stargazers_url}
+              languages={transformLanguages(p.languages || [])} // Ensure languages is an array
             />
           )
         )}
