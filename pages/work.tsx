@@ -83,7 +83,7 @@ export default function WorkPage() {
             letterSpacing="tighter"
           >
             <Link href="https://www.afridoctor.com" isExternal>
-              Afridoctor
+              AfriDoctor
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
@@ -142,7 +142,7 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            Other experience
+            and more...
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
             Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own start-ups and other indie projects.

@@ -111,7 +111,7 @@ export default function Home() {
                 iziwork
               </Link> (start-up, Paris),{" "}
               <Link href="https://afridoctor.com/" target="_blank">
-                Afridoctor
+                AfriDoctor
               </Link> (start-up, Ghana), and{" "}
               <Link href="https://www.pageexecutive.com/" target="_blank">
                 Page Executive
