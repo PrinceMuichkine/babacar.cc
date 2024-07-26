@@ -46,8 +46,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/images/favicon.ico" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="apple-touch-icon" href="/images/sharing.png" />
         <link rel="manifest" href="/manifest.json" />
+        <meta name="google-site-verification" content="K_JJxtrQJWfHvk7iN_vEBb6HL_ZJaVS-7jtH8AyD2oI" />
       </Head>
 
       <Script async src="https://cdn.splitbee.io/sb.js" />
@@ -62,7 +63,7 @@ export default function Home() {
           description,
           images: [
             {
-              url: "https://babacar.cc/images/logo.png",
+              url: "https://babacar.cc/images/sharing.png",
               width: 800,
               height: 600,
               alt: title,

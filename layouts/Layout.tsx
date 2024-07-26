@@ -1,8 +1,7 @@
 import { Flex, Stack } from "@chakra-ui/react";
 import Navbar from "../components/nav/Navbar";
 import Footer from "./Footer";
-import { Widget } from "../components/widgetForm/Widget";
-import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react"
 import ModelViewer from "../components/3dmodel/3dModel";
 
 export default function Layout({ children }) {
@@ -15,7 +14,7 @@ export default function Layout({ children }) {
         "2xl": "750px",
         md: "750px",
         lg: "750px",
-    
+
       }}
       px={10}
       m="0 auto"
@@ -26,6 +25,7 @@ export default function Layout({ children }) {
       {children}
 
       <Footer />
+      <Analytics />
     </Flex>
   );
 }
