@@ -15,7 +15,7 @@ const ModelViewer: React.FC<Props> = () => {
   const refContainer = useRef<HTMLDivElement | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const refRenderer = useRef<THREE.WebGLRenderer | null>(null);
-  const modelUrl = "/models/pokemon_firered_-_players_room.glb";
+  const modelUrl = "/models/pokemon.glb";
 
   const handleWindowResize = useCallback(() => {
     const renderer = refRenderer.current;

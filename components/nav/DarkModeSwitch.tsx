@@ -1,13 +1,9 @@
 import { useColorMode, IconButton } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
-const DarkModeSwitch = () => {
+// Add color prop
+const DarkModeSwitch = ({ color }) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const iconColor = {
-    light: "black",
-    dark: "white",
-  };
-
 
   return (
     <>
@@ -15,7 +11,7 @@ const DarkModeSwitch = () => {
         aria-label="Toggle dark mode"
         icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
         onClick={toggleColorMode}
-        color={iconColor[colorMode]}
+        color={color} // Use the passed color prop
         variant="ghost"
         _hover={{ background: "none" }}
         _focus={{ background: "none", border: "none" }}

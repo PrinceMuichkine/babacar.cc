@@ -70,20 +70,17 @@ const ProjectListFull = () => {
       </div>
     );
 
-  const filteredProjects = Object(data.repos)
-    .filter(
-      (project: { name: string; description: string; language: string }) =>
-        project?.name?.toLowerCase().includes(searchValue.toLowerCase()) ||
-        project?.description
-          ?.toLowerCase()
-          .includes(searchValue.toLowerCase()) ||
-        project?.language?.toLowerCase().includes(searchValue.toLowerCase())
-    )
-    .sort((a: { created_at: string }, b: { created_at: string }) => {
-      return (
-        new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-      );
-    });
+  // Ensure data.repos is an array before filtering
+  const filteredProjects = Array.isArray(data.repos) ? data.repos.filter(
+    (project: { name: string; description: string; language: string }) =>
+      project?.name?.toLowerCase().includes(searchValue.toLowerCase()) ||
+      project?.description?.toLowerCase().includes(searchValue.toLowerCase()) ||
+      project?.language?.toLowerCase().includes(searchValue.toLowerCase())
+  ).sort((a: { created_at: string }, b: { created_at: string }) => {
+    return (
+      new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    );
+  }) : [];
 
   return (
     <>

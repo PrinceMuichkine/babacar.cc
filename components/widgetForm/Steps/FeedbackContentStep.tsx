@@ -74,7 +74,7 @@ export function FeedBackContentStep({
       <PopoverBody>
         <form
           onSubmit={handleSubmitFeedback}
-          action="https://formsubmit.co/erickpmotta@gmail.com"
+          action=""
           method="post"
         >
           <Input

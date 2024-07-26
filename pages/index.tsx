@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import useSWR from "swr";
 import ProjectList from "../components/projects/ProjectList";
 import { useColorMode } from "@chakra-ui/react";
+import Head from 'next/head';
 
 const url = "https://babacar.cc/";
 const title = "Babacar Diop";
@@ -24,7 +25,7 @@ const description =
 
 export default function Home() {
   const [showNotation, setShowNotation] = useState(true);
-  const { colorMode } = useColorMode(); // Get the current color mode
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     const handleNotationDisplay = () => {
@@ -35,12 +36,20 @@ export default function Home() {
     handleNotationDisplay();
   }, []);
 
-  // Fetcher function for SWR
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR("/api/github", fetcher);
 
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+
       <Script async src="https://cdn.splitbee.io/sb.js" />
 
       <NextSeo
@@ -53,19 +62,26 @@ export default function Home() {
           description,
           images: [
             {
-              url: "/images/vintagepc.png",
+              url: "https://babacar.cc/images/logo.png",
               width: 800,
-              height: 420,
+              height: 600,
               alt: title,
             },
           ],
+          site_name: title,
+        }}
+        twitter={{
+          handle: '@bm_diop',
+          site: '@bm_diop',
+          cardType: 'summary_large_image',
         }}
       />
+
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.4 }}
-        style={{ position: "relative" }} // Add inline style
+        style={{ position: "relative" }}
       >
         <Flex justifyContent="space-around" style={{ position: "relative", zIndex: 10 }}> {/* Add inline style */}
           <Flex flexDir="column">
@@ -78,7 +94,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              I'm a 24-year-old self-taught web developer currently based in West Africa, where I am volunteering. Passionate about open-source development, I enjoy building projects using JavaScript, Go, and Python. These languages, along with their communities and ecosystems, drive my enthusiasm for coding and continuous learning.
+              I'm a 24-year-old self-taught web developer currently based in West Africa, where I am volunteering. Passionate about open-source development, I enjoy building projects using JavaScript, Go, and Python. These languages, along with their communities, drive my enthusiasm for coding and continuous learning.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -108,7 +124,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working on my projects, I love surfing, traveling, reading, and engaging in conversations about art, tech, history, and business. À mes heures perdues, I enjoy running, practicing martial arts and boxing — all of which keep me focused.
+              When I'm not working on my projects, I'm surfing, traveling, reading, or engaging in conversations about art, tech, history, and business with new people I met. À mes heures perdues, I enjoy running, practicing martial arts and boxing — all of which keep me focused.
             </Paragraph>
           </Flex>
         </Flex>
@@ -148,11 +164,9 @@ export default function Home() {
               starCount={0}
               stargazersUrl={""}
               style={{
-                backgroundImage: "url('/images/africanledger.png')", // Corrected path
-                backgroundSize: "cover", // Ensure the image covers the entire card
-                backgroundPosition: "center", // Center the image
-                color: "white", // Ensure text is always white
-                backgroundColor: "rgba(0, 0, 0, 0.5)" // Add semi-transparent black background
+                backgroundImage: "url('/images/africanledger.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
               }}
             />
 
@@ -162,18 +176,16 @@ export default function Home() {
               repoHref="https://lomi.africa"
               demoHref=""
               languages={[
-                { name: "JavaScript", color: "#f7df1e" }, // Correct color for JavaScript
-                { name: "React", color: "#61dafb" } // Correct color for React
+                { name: "JavaScript", color: "#f7df1e" },
+                { name: "React", color: "#61dafb" }
               ]}
               starCount={0}
               stargazersUrl={""}
               style={{
-                backgroundImage: "url('/images/icon.png')", // Corrected path
-                backgroundSize: "cover", // Ensure the image covers the entire card
-                backgroundPosition: "center", // Center the image
-                color: "white", // Ensure text is always white
-                border: "none", // Remove border
-                backgroundColor: "rgba(0, 0, 0, 0.5)" // Add semi-transparent black background
+                backgroundImage: "url('/images/icon.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                border: "none",
               }}
             />
           </SimpleGrid>

@@ -60,7 +60,7 @@ export default ({ post, blocks }) => {
             { url: "https://www.example.ie/og-image-03.jpg" },
             { url: "https://www.example.ie/og-image-04.jpg" },
           ],
-          site_name: "erickrosa.dev",
+          site_name: "babacar.cc",
         }}
         twitter={{
           handle: "@handle",

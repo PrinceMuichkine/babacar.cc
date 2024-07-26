@@ -32,6 +32,9 @@ export default function WorkPage() {
     />
   );
 
+  // Define the color for the bold text based on the color mode
+  const boldTextColor = useColorModeValue("blue.500", "red.500");
+
   return (
     <motion.div
       initial={{ y: -20, opacity: 0 }}
@@ -54,7 +57,7 @@ export default function WorkPage() {
         ></Box>
         <VStack spacing={6} align="stretch">
           <Text fontSize="lg" mt={4} textAlign="justify">
-            I've been working as a <Text as="span" fontWeight="bold" fontStyle="italic">tech business operator </Text>  for the past 4 years. My experience spans various industries and sectors, where I've gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
+            I've been working as a <Text as="span" fontWeight="bold" fontStyle="italic" mx={1} color={boldTextColor}>tech business operator</Text> for the past 4 years. My experience spans various industries and sectors, where I've gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
           </Text>
           <Divider borderColor={dividerColor} /> {/* Updated divider color */}
           <Heading
