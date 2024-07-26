@@ -124,7 +124,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working on my projects, I'm surfing, traveling, reading, or engaging in conversations about art, tech, history, and business with new people I met. À mes heures perdues, I enjoy running, practicing martial arts and boxing — all of which keep me focused.
+              When I'm not working on my projects, I'm surfing, traveling, reading, or engaging in conversations about art, tech, history, and business with new people I met. I also enjoy running, practicing martial arts, and boxing — all of which keep me focused.
             </Paragraph>
           </Flex>
         </Flex>
