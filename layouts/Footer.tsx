@@ -28,7 +28,7 @@ const Footer = () => (
     >
       <Text fontSize="11px" fontWeight={"medium"}>
         &copy; Babacar Diop {new Date().getFullYear()} — {/* Added space before the dash */}
-        <Link href="https://github.com/princemuichkine" isExternal>
+        <Link href="https://github.com/princemuichkine/babacar.cc.git" isExternal>
           This website code is open-source.
         </Link>
       </Text>
