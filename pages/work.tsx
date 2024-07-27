@@ -19,19 +19,6 @@ export default function WorkPage() {
   // Define the divider color based on the color mode
   const dividerColor = useColorModeValue("gray.400", "gray.600");
 
-  // Define the bullet point style
-  const bulletPoint = (
-    <Box
-      as="span"
-      display="inline-block"
-      width="8px"
-      height="8px"
-      borderRadius="50%"
-      backgroundColor={useColorModeValue("gray.600", "gray.400")}
-      mx={2}
-    />
-  );
-
   // Define the color for the bold text based on the color mode
   const boldTextColor = useColorModeValue("black", "white");
 
@@ -40,7 +27,7 @@ export default function WorkPage() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.4 }}
-      style={{ position: "relative", width: "100%", minHeight: "100vh", overflowY: "auto" }} // Adjusted height and overflow
+      style={{ position: "relative", width: "100%", minHeight: "100vh", overflowY: "auto" }}
     >
       <Box as="section" style={{ position: "relative", zIndex: 10 }}>
         <Heading as="h1" fontSize="2xl" fontWeight="medium">
@@ -52,14 +39,13 @@ export default function WorkPage() {
           m="10px 0"
           bottom="-1px"
           display="block"
-          backgroundImage="radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2% );
-}"
+          backgroundImage="radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2% );"
         ></Box>
         <VStack spacing={6} align="stretch">
-          <Text fontSize="lg" mt={4} textAlign="justify">
-            I've been working as a <Text as="span" fontWeight="bold" color={boldTextColor}>tech and business operator</Text> for the past 4 years. My experience spans various industries and sectors, where I've gained expertise in business operations, sales, marketing, recruitment, finance, software engineering, and design.
+          <Text fontSize="md" mt={4} textAlign="justify">
+            I've been working as a <Text as="span" fontWeight="bold" color={boldTextColor}>tech and business operator</Text> for the past 4 years. My experience spans multiple industries, where I've gained expertise in business operations, sales & marketing, recruitment, finance, software engineering, and design.
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -72,9 +58,10 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Account Executive {bulletPoint} Amsterdam, Netherlands {bulletPoint} 2022 - 2023
+            <Text as="span" color={useColorModeValue("white", "white")}>Account Executive</Text>{" "}
+            | Amsterdam, Netherlands | 2022 - 2023
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -87,9 +74,10 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Account Manager {bulletPoint} Accra, Ghana {bulletPoint} 2022
+            <Text as="span" color={useColorModeValue("white", "white")}>Account Manager</Text>{" "}
+            | Accra, Ghana | 2022
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -102,9 +90,10 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Intern — Partnerships {bulletPoint} Paris, France {bulletPoint} 2021
+            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Partnerships</Text>{" "}
+            | Paris, France | 2021
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -117,9 +106,10 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Intern — Projects {bulletPoint} Brussels, Belgium {bulletPoint}  2020
+            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Projects</Text>{" "}
+            | Brussels, Belgium | 2020 - 2021
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -132,9 +122,10 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            Intern — Infrastructure and Energy {bulletPoint} Addis Ababa, Ethiopia {bulletPoint} 2019
+            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Infrastructure and Energy</Text>{" "}
+            | Addis Ababa, Ethiopia | 2019
           </Text>
-          <Divider borderColor={dividerColor} /> {/* Updated divider color */}
+          <Divider borderColor={dividerColor} />
           <Heading
             as="h2"
             fontSize="xl"
@@ -145,7 +136,7 @@ export default function WorkPage() {
             and more...
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
-            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on my own products and other indie projects.
+            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products</Link> and other indie projects.
           </Text>
         </VStack>
       </Box>

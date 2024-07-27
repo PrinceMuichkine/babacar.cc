@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+[data-theme=dark] {
+  color-scheme: dark only;
+}
+[data-theme=light],
+html {
+  color-scheme: light only;
+}
+@media(prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark only;
+  }
+}
+[aria-pressed=true] path:nth-of-type(1) {
+  display: none;
+}
+[aria-pressed=false] path:nth-of-type(2) {
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: canvas;
+  color: canvasText;
+  align-content: center;
+}
+
+body::before {
+  --size: 30px;
+  --line: color-mix(in lch, canvasText, transparent 85%);
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: radial-gradient(4px 4px at 50% 50%,
+        var(--line) 2px,
+        transparent 2px var(--size)
+      )
+      50% 50% / var(--size) var(--size);
+  mask: linear-gradient(-25deg, transparent 30%, white);
+  top: 0;
+  transform-style: flat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+::view-transition-new(body),
+::view-transition-old(body) {
+  animation: pan 0.8s ease-in-out;
+  backface-visibility: hidden;
+  box-shadow: 2.2px 61.3px 73.1px -2px hsl(0 0% 0% / 0.58);
+}
+
+::view-transition-new(body) {
+  --sr: 180deg;
+  background: canvas;
+}
+
+::view-transition-old(body) {
+  --sr: 0deg;
+  backface-visibility: hidden;
+}
+
+body {
+  view-transition-name: body;
+}
+
+@keyframes pan {
+  0% {
+    transform: scale(1) rotateY(var(--sr));
+  }
+  25% {
+    transform: scale(0.8) rotateY(calc(var(--sr) + 45deg));
+    box-shadow: 1.8px 50.7px 51.4px -3.2px hsl(0 0% 0% / 0.32);
+  }
+  100% {
+    transform: scale(1) rotateY(calc(var(--sr) + 180deg));
+  }
+}
+
+:root {
+  view-transition-name: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+[aria-pressed] {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  transition: background 0.2s;
+  cursor: pointer;
+  background-color: color-mix(in lch, canvas, canvasText calc(var(--intent) * 15%));
+}
+
+button svg {
+  width: 50%;
+}
+
+button:is(:focus-visible, :hover) {
+  --intent: 1;
+}

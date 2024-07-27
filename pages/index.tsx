@@ -99,12 +99,12 @@ export default function Home() {
             </Paragraph>
             <Box height="10px" />
             <Paragraph
-              fontSize={["sm", "md"]}
+              fontSize={["md"]}
               lineHeight={2}
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              As an entrepreneur, I thrive on solving problems and exploring new ideas. My previous experience as a business operator in Europe, working for{" "}
+              As an entrepreneur, I thrive on solving problems and exploring new ideas. My previous experience as a business operator, working for{" "}
               <Link href="https://telnyx.com/" target="_blank">
                 Telnyx
               </Link> (start-up, Amsterdam),{" "}
@@ -120,18 +120,18 @@ export default function Home() {
             </Paragraph>
             <Box height="10px" />
             <Paragraph
-              fontSize={["sm", "md"]}
+              fontSize={["md"]}
               lineHeight={2}
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working on my projects, I'm surfing, traveling, reading, or engaging in conversations about art, tech, history, and business with new people I met. I also enjoy running, practicing martial arts, and boxing — all of which keep me focused.
+              When I'm not working on my projects, I'm surfing, traveling, reading, or engaging in conversations about art, tech, history, and business. I also enjoy running, practicing martial arts, and boxing — all of which keep me focused.
             </Paragraph>
           </Flex>
         </Flex>
 
         <Box as="div" m="30px 0"></Box>
-        <Box as="section" mb={20}>
+        <Box as="section" mb={20} id="featured-projects"> {/* Added id here */}
           <Box
             as="div"
             m="30px 0"

@@ -2,37 +2,38 @@ import {
   Box,
   Stack,
   Text,
-  Flex,
   ButtonGroup,
   IconButton,
   Link,
-  Divider,
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
+
 const Footer = () => (
   <Box
     as="footer"
     role="contentinfo"
-    m="20px auto"
-    width={"100%"}
+    borderTop="1px solid" // Add a single border at the top
+    borderColor="gray.200" // Use a light gray color for the border
+    mt="20px" // Add margin top
+    py="10px" // Add padding top and bottom
+    width="100%"
     maxW="100%"
-    p={0}
   >
     <Stack
-      direction="row"
-      spacing="6"
+      direction={["column", "row"]} // Stack vertically on mobile, horizontally on larger screens
+      spacing={["4", "6"]} // Adjust spacing for different screen sizes
       align="center"
-      justify="space-between" // Align items to the ends
+      justify="space-between"
       textAlign="center"
     >
-      <Text fontSize="11px" fontWeight={"medium"}>
-        &copy; Babacar Diop {new Date().getFullYear()} — {/* Added space before the dash */}
+      <Text fontSize="11px" fontWeight="medium">
+        &copy; Babacar Diop {new Date().getFullYear()} —{" "}
         <Link href="https://github.com/princemuichkine/babacar.cc.git" isExternal>
-          This website code is open-source.
+          This website's code is public.
         </Link>
       </Text>
-      <ButtonGroup variant="default" spacing="0"> {/* Reduced spacing */}
+      <ButtonGroup variant="ghost" spacing="0">
         <IconButton
           as="a"
           href="mailto:bmamour.diop@icloud.com"
@@ -81,7 +82,6 @@ const Footer = () => (
         />
       </ButtonGroup>
     </Stack>
-    <Divider pt={0} w="100%" />
   </Box>
 );
 
