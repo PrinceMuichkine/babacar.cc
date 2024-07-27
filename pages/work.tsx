@@ -58,7 +58,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            <Text as="span" color={useColorModeValue("white", "white")}>Account Executive</Text>{" "}
+            <Text as="span" color={useColorModeValue("black", "white")}>Account Executive</Text>{" "}
             | Amsterdam, Netherlands | 2022 - 2023
           </Text>
           <Divider borderColor={dividerColor} />
@@ -74,7 +74,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            <Text as="span" color={useColorModeValue("white", "white")}>Account Manager</Text>{" "}
+            <Text as="span" color={useColorModeValue("black", "white")}>Account Manager</Text>{" "}
             | Accra, Ghana | 2022
           </Text>
           <Divider borderColor={dividerColor} />
@@ -90,7 +90,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Partnerships</Text>{" "}
+            <Text as="span" color={useColorModeValue("black", "white")}>Intern — Partnerships</Text>{" "}
             | Paris, France | 2021
           </Text>
           <Divider borderColor={dividerColor} />
@@ -106,7 +106,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Projects</Text>{" "}
+            <Text as="span" color={useColorModeValue("black", "white")}>Intern — Projects</Text>{" "}
             | Brussels, Belgium | 2020 - 2021
           </Text>
           <Divider borderColor={dividerColor} />
@@ -122,7 +122,7 @@ export default function WorkPage() {
             </Link>
           </Heading>
           <Text fontSize="md" color={useColorModeValue("gray.600", "gray.400")}>
-            <Text as="span" color={useColorModeValue("white", "white")}>Intern — Infrastructure and Energy</Text>{" "}
+            <Text as="span" color={useColorModeValue("black", "white")}>Intern — Infrastructure and Energy</Text>{" "}
             | Addis Ababa, Ethiopia | 2019
           </Text>
           <Divider borderColor={dividerColor} />
@@ -136,7 +136,7 @@ export default function WorkPage() {
             and more...
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
-            Other experience includes volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products</Link> and other indie projects.
+            Other experiences include volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products</Link> and other indie projects.
           </Text>
         </VStack>
       </Box>
