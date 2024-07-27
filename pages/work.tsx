@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   description: "A summary of my work and contributions.",
 };
 
+const jobTitleStyle = {
+  borderBottom: "1px solid transparent",
+  transition: "border-color 0.3s ease",
+  _hover: {
+    borderBottomColor: "currentColor",
+  },
+};
+
 export default function WorkPage() {
   // Define the divider color based on the color mode
   const dividerColor = useColorModeValue("gray.400", "gray.600");
@@ -136,7 +144,7 @@ export default function WorkPage() {
             and more...
           </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
-            Other experiences include volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products</Link> and other indie projects.
+            other experiences include volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products and other indie projects.</Link>
           </Text>
         </VStack>
       </Box>

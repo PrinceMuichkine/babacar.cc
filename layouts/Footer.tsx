@@ -15,7 +15,7 @@ const Footer = () => (
     role="contentinfo"
     borderTop="1px solid" // Add a single border at the top
     borderColor="gray.200" // Use a light gray color for the border
-    mt="5px" // Add margin top
+    mt="10px" // Add margin top
     py="10px" // Add padding top and bottom
     width="100%"
     maxW="100%"
