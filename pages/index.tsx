@@ -102,21 +102,9 @@ export default function Home() {
               fontSize={["md"]}
               lineHeight={2}
               textAlign="justify"
-              color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
+              color={colorMode === "dark" ? "white" : "black"}
             >
-              As an entrepreneur, I thrive on solving problems and exploring new ideas. My previous experience as a business operator, working for{" "}
-              <Link href="https://telnyx.com/" target="_blank">
-                Telnyx
-              </Link> (start-up, Amsterdam),{" "}
-              <Link href="https://iziwork.com/" target="_blank">
-                iziwork
-              </Link> (start-up, Paris),{" "}
-              <Link href="https://afridoctor.com/" target="_blank">
-                AfriDoctor
-              </Link> (start-up, Ghana), and{" "}
-              <Link href="https://www.pageexecutive.com/" target="_blank">
-                Page Executive
-              </Link> (not-a-start-up, Brussels), has given me a diverse skill set.
+              As an entrepreneur, I thrive on solving problems and exploring new ideas. Discover more about my business background <Link href="/work">here.</Link>
             </Paragraph>
             <Box height="10px" />
             <Paragraph
