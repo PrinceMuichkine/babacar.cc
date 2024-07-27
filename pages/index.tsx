@@ -64,8 +64,8 @@ export default function Home() {
           images: [
             {
               url: "https://babacar.cc/images/sharing.png",
-              width: 800,
-              height: 600,
+              width: 450,
+              height: 450,
               alt: title,
             },
           ],
