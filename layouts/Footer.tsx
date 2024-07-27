@@ -58,7 +58,7 @@ const Footer = () => (
         />
         <IconButton
           as="a"
-          href="https://www.linkedin.com/in/bm_diop"
+          href="https://www.linkedin.com/in/bmdiop"
           aria-label="Linkedin"
           icon={<FaLinkedin fontSize="14px" />} // Adjusted size
           borderRadius="0" // Square icon
