@@ -8,7 +8,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { Metadata } from "next";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -47,7 +47,7 @@ export default function WorkPage() {
           m="10px 0"
           bottom="-1px"
           display="block"
-          backgroundImage="radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2% );"
+          backgroundImage="radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);"
         ></Box>
         <VStack spacing={6} align="stretch">
           <Text fontSize="md" mt={4} textAlign="justify">

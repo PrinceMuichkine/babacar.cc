@@ -1,6 +1,4 @@
-# babacar.cc
+### babacar.cc
 
-This is my personal website built with [Next.js](https://nextjs.org/), [React](https://pt-br.reactjs.org/) and [Chakra UI](https://chakra-ui.com/).
-
-[Click here to see!](https://babacar.cc)
+This is my personal website. [Click here to see!](https://babacar.cc)
 
