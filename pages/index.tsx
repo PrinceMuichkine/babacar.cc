@@ -63,7 +63,7 @@ export default function Home() {
           description,
           images: [
             {
-              url: "https://babacar.cc/images/sharing.png",
+              url: "https://res.cloudinary.com/dzrdlevfn/image/upload/v1722208180/sharingg_oyxfz1.png",
               width: 450,
               height: 450,
               alt: title,
