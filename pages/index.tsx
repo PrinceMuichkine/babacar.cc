@@ -90,7 +90,7 @@ export default function Home() {
               Hi there, I&#39;m Babacar 👋🏼
             </Heading>
             <Paragraph
-              fontSize={["sm", "md"]}
+              fontSize={["md"]}
               lineHeight={2}
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
