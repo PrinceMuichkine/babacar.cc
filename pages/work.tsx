@@ -141,8 +141,9 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            and more...
-          </Heading>
+            <Link href="/Resume_24.pdf" isExternal>
+              and more...
+            </Link>          </Heading>
           <Text fontSize="md" color={useColorModeValue("black", "whiteAlpha.900")}>
             other experiences include volunteering in Ghana for <Link href="https://www.undp.org" isExternal>UNDP</Link>, working on <Link href="/#featured-projects">my own products and other indie projects.</Link>
           </Text>

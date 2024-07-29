@@ -8,7 +8,6 @@ import {
     Box,
     IconButton,
     Button,
-    useColorModeValue,
 } from '@chakra-ui/react'
 
 import { ExternalLinkIcon, ViewIcon } from '@chakra-ui/icons'
@@ -18,7 +17,7 @@ interface ProjectCardProps {
     description: string;
     repoHref: string;
     demoHref: string;
-    languages: { name: string; color: string }[];
+    languages: { name: string; color: string }[]; // Ensure languages is defined here
     starCount: number;
     stargazersUrl: string;
     languageColor?: string;
@@ -26,7 +25,18 @@ interface ProjectCardProps {
     style?: React.CSSProperties;
 }
 
-export default function ProjectCard({ title, description, repoHref, demoHref, languageColor, language, starCount, stargazersUrl, style }: ProjectCardProps) {
+export default function ProjectCard({
+    title,
+    description,
+    repoHref,
+    demoHref,
+    languageColor,
+    language,
+    starCount,
+    stargazersUrl,
+    style,
+    languages // Ensure languages is included here
+}: ProjectCardProps) {
     const [isHovered, setIsHovered] = useState(false)
     const { colorMode } = useColorMode()
 
@@ -134,9 +144,13 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
                             </Link>
                         )}
                     </Flex>
-                    <Flex align="center">
-                        <Box w={3} h={3} mr={1} borderRadius="50%" bgColor={languageColor} />
-                        <Text fontSize="sm" color={textColor}>{language}</Text>
+                    <Flex align="center" mt={2}>
+                        {languages.map((lang) => ( // Loop through languages
+                            <Box key={lang.name} w={3} h={3} mr={1} borderRadius="50%" bgColor={lang.color} />
+                        ))}
+                        <Text fontSize="sm" color={textColor} ml={2}>
+                            {languages.length > 0 ? languages[languages.length - 1].name : 'No Language'} {/* Display the last language */}
+                        </Text>
                     </Flex>
                 </Flex>
             </Flex>

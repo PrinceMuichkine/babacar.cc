@@ -95,7 +95,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              I'm a 24-year-old self-taught web developer based in West Africa. I build mainly with JavaScript, Go and Python, driven by a passion for open-source and continuous learning. Learn more about my work <Link href="/work"><strong>here</strong></Link>.
+              I'm a 24-year-old self-taught web developer based in West Africa, where I'm currently volunteering. I build mainly with JavaScript, Go and Python — driven by a passion for open-source and continuous learning. Learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -104,7 +104,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              Away from the keyboard, I surf, travel, read, and discuss art, technology, economics, and business. I also enjoy running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
+              Off the clock, I surf, travel, read, and discuss art, technology, economics, and business. I also enjoy running, practicing martial arts, and boxing! all of which help me stay disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
@@ -138,9 +138,8 @@ export default function Home() {
               repoHref="https://africanledger.com"
               demoHref=""
               languages={[
-                { name: "JavaScript", color: "#f7df1e" },
-                { name: "Go", color: "#00ADD8" }
-              ]}
+                { name: "React", color: "#61dafb" },
+                { name: "JavaScript", color: "#f7df1e" }]}
               starCount={0}
               stargazersUrl={""}
               style={{
@@ -156,8 +155,9 @@ export default function Home() {
               repoHref="https://lomi.africa"
               demoHref=""
               languages={[
-                { name: "JavaScript", color: "#f7df1e" },
-                { name: "React", color: "#61dafb" }
+                { name: "React", color: "#61dafb" },
+                { name: "JavaScript", color: "#f7df1e" }
+
               ]}
               starCount={0}
               stargazersUrl={""}
