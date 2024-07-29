@@ -21,7 +21,7 @@ import Head from 'next/head';
 const url = "https://babacar.cc/";
 const title = "Babacar Diop";
 const description =
-  "Entrepreneur, business operator, self-taught web developer; passionate about building products and services with code to solve (my) problems.";
+  "Entrepreneur, and business operator; I'm passionate about building products and services with code to solve (my) problems.";
 
 export default function Home() {
   const [showNotation, setShowNotation] = useState(true);
@@ -113,7 +113,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working, I enjoy surfing, traveling, reading, and discussing art, technology, economy, and business. I also like running, practicing martial arts, and boxing — all of which help me stay focused and disciplined.
+              When I'm not working, I enjoy surfing, traveling, reading, and discussing art, technology, economy, and business. I also like running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
