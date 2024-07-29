@@ -95,7 +95,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              I'm a 24-year-old self-taught web developer currently based in West Africa, where I am volunteering. Passionate about open-source development, I enjoy building projects using JavaScript, Go, and Python. These languages, along with their communities, drive my enthusiasm for coding and continuous learning.
+              I'm a 24-year-old self-taught web developer based in West Africa. I build mainly with JavaScript, Go and Python, driven by a passion for open-source and continuous learning. Learn more about my work here.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -104,7 +104,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"}
             >
-              As an entrepreneur, I thrive on solving problems and exploring new ideas; you can learn more about my work <Link href="/work"><strong>here</strong></Link>.
+              Learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -113,7 +113,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working, I enjoy surfing, traveling, reading, and discussing art, technology, economics and business. I also love running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
+              Away from the keyboard, I surf, travel, read, and discuss art, technology, economics, and business. I also enjoy running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
