@@ -104,7 +104,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"}
             >
-              As an entrepreneur, I thrive on solving problems and exploring new ideas; learn more about my work <Link href="/work">here.</Link>
+              As an entrepreneur, I thrive on solving problems and exploring new ideas; you can learn more about my work <Link href="/work"><strong>here.</strong></Link>
             </Paragraph>
             <Box height="10px" />
             <Paragraph
