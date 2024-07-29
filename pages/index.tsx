@@ -21,7 +21,7 @@ import Head from 'next/head';
 const url = "https://babacar.cc/";
 const title = "Babacar Diop";
 const description =
-  "Entrepreneur, and business operator; I'm passionate about building products and services with code to solve (my) problems.";
+  "Entrepreneur and business operator. I'm passionate about building products and services with code to solve (my) problems.";
 
 export default function Home() {
   const [showNotation, setShowNotation] = useState(true);
