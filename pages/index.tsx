@@ -104,7 +104,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"}
             >
-              As an entrepreneur, I thrive on solving problems and exploring new ideas; you can learn more about my work <Link href="/work"><strong>here.</strong></Link>
+              As an entrepreneur, I thrive on solving problems and exploring new ideas; you can learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
@@ -113,7 +113,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              When I'm not working, I enjoy surfing, traveling, reading, and discussing art, technology, economy, and business. I also like running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
+              When I'm not working, I enjoy surfing, traveling, reading, and discussing art, technology, economics and business. I also love running, practicing martial arts, and boxing — all of which help me stay disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
