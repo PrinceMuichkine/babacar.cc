@@ -24,10 +24,7 @@ const jobTitleStyle = {
 };
 
 export default function WorkPage() {
-  // Define the divider color based on the color mode
   const dividerColor = useColorModeValue("gray.400", "gray.600");
-
-  // Define the color for the bold text based on the color mode
   const boldTextColor = useColorModeValue("black", "white");
 
   return (
@@ -43,11 +40,11 @@ export default function WorkPage() {
         </Heading>
         <Box
           height="4px"
-          w="60px"
+          w="50px"
           m="10px 0"
           bottom="-1px"
           display="block"
-          backgroundImage="radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);"
+          backgroundImage="linear-gradient(to right, #D6B600, #FF0000);"
         ></Box>
         <VStack spacing={6} align="stretch">
           <Text fontSize="md" mt={4} textAlign="justify">
@@ -150,6 +147,6 @@ export default function WorkPage() {
           </Text>
         </VStack>
       </Box>
-    </motion.div>
+    </motion.div >
   );
 }
