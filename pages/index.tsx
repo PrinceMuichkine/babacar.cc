@@ -97,12 +97,12 @@ export default function Home() {
             >
               I'm a 24-year-old self-taught web developer and business professional based in West Africa; where I'm currently volunteering. I build mainly with JavaScript, Go and Python. Learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
-            <Box height="10px" />
+            <Box height="15px" />
             <Paragraph
               fontSize={["md"]}
-              lineHeight={3}
+              lineHeight={2}
               textAlign="justify"
-              color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
+              color={colorMode === "dark" ? "white" : "black"}
             >
               Off the clock, I surf, travel, read, and discuss art, technology, and business. I also enjoy running, practicing martial arts, and boxing! all of which help me stay disciplined and focused.
             </Paragraph>
