@@ -95,12 +95,12 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              I'm a 24-year-old self-taught web developer based in West Africa, where I'm currently volunteering. I build mainly with JavaScript, Go and Python — driven by a passion for open-source and continuous learning. Learn more about my work <Link href="/work"><strong>here</strong></Link>.
+              I'm a 24-year-old self-taught web developer and business professional based in West Africa; where I'm currently volunteering. I build mainly with JavaScript, Go and Python. Learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
             <Box height="10px" />
             <Paragraph
               fontSize={["md"]}
-              lineHeight={2}
+              lineHeight={3}
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >

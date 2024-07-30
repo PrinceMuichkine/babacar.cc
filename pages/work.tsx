@@ -51,7 +51,7 @@ export default function WorkPage() {
         ></Box>
         <VStack spacing={6} align="stretch">
           <Text fontSize="md" mt={4} textAlign="justify">
-            I've been working as a <Text as="span" fontWeight="bold" color={boldTextColor}>tech and business operator</Text> for the past 4 years. My experience spans multiple industries, where I've gained expertise in business operations, sales & marketing, recruitment, finance, software engineering, and design.
+            I've been working as a <Text as="span" fontWeight="bold" color={boldTextColor}>tech and business operator</Text> for the past 4 years. My experience spans multiple industries, where I've gained expertise in project management, sales & marketing, recruitment, finance, software engineering, and design.
           </Text>
           <Divider borderColor={dividerColor} />
           <Heading
