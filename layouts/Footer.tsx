@@ -93,7 +93,7 @@ const Footer = () => {
               <Image
                 src={colorMode === "dark" ? "images/transparent.png" : "images/transparent2.png"}
                 alt="lomi."
-                boxSize="18px"
+                boxSize="18.5px"
               />
             }
             borderRadius="0.3"
@@ -110,7 +110,7 @@ const Footer = () => {
               <Image
                 src={colorMode === "dark" ? "images/gold.png" : "images/black.png"}
                 alt="The African Ledger"
-                boxSize="24px"
+                boxSize="24.5px"
               />
             }
             borderRadius="0.2"

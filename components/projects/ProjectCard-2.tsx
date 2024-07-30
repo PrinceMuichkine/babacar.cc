@@ -31,11 +31,10 @@ export default function ProjectCard({
     repoHref,
     demoHref,
     languageColor,
-    language,
     starCount,
     stargazersUrl,
     style,
-    languages // Ensure languages is included here
+    languages
 }: ProjectCardProps) {
     const [isHovered, setIsHovered] = useState(false)
     const { colorMode } = useColorMode()
@@ -109,7 +108,7 @@ export default function ProjectCard({
                 <Box>
                     <Heading as="h3" size="md" fontWeight="semibold" mb={2} color={textColor}>{title}</Heading>
                     <Box h={1} w="100%" bgColor={textColor} transition="background-color .5s ease-in-out" mb={4} mx="auto" />
-                    <Text fontSize="medium" color={textColor} mt={4}>{description}</Text>
+                    <Text fontSize="sm" color={textColor} mt={4}>{description}</Text>
                 </Box>
                 <Flex justify="space-between" mt={2}>
                     <Flex align="center">
