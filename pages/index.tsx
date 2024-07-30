@@ -138,7 +138,6 @@ export default function Home() {
               repoHref="https://africanledger.com"
               demoHref=""
               languages={[
-                { name: "React", color: "#61dafb" },
                 { name: "JavaScript", color: "#f7df1e" }]}
               starCount={0}
               stargazersUrl={""}
