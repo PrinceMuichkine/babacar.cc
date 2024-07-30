@@ -104,7 +104,7 @@ export default function Home() {
               textAlign="justify"
               color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
             >
-              Off the clock, I surf, travel, read, and discuss art, technology, economics, and business. I also enjoy running, practicing martial arts, and boxing! all of which help me stay disciplined and focused.
+              Off the clock, I surf, travel, read, and discuss art, technology, and business. I also enjoy running, practicing martial arts, and boxing! all of which help me stay disciplined and focused.
             </Paragraph>
           </Flex>
         </Flex>
