@@ -120,12 +120,13 @@ const ModelContainer = forwardRef<HTMLDivElement, DogContainerProps>(
     <Box
       ref={ref}
       m="auto"
-      mt={["-250px", "-250px", "-320px"]}
-      mb={["-40px", "-40px", "-40px"]}
-      w={[180, 480, 540]}
-      h={[380, 480, 540]}
+      mt={["0", "-60px", "-100px"]}
+      mb={["0", "-60px", "-80px"]}
+      w={["100%", "80%", "70%"]}
+      h={["300px", "400px", "500px"]}
       position="relative"
       zIndex="0"
+      alignSelf="center"
     >
       {children}
     </Box>

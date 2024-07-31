@@ -33,6 +33,7 @@ body {
   background: canvas;
   color: canvasText;
   align-content: center;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -49,6 +50,7 @@ body::before {
       50% 50% / var(--size) var(--size);
   mask: linear-gradient(-25deg, transparent 30%, white);
   top: 0;
+   left: auto;
   transform-style: flat;
   pointer-events: none;
   z-index: -1;
