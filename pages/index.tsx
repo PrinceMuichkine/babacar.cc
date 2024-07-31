@@ -169,7 +169,7 @@ export default function Home() {
           </SimpleGrid>
         </Box>
 
-        <Box as="section" mb={20}>
+        <Box as="section" mb={20} maxWidth="container.xl" mx="auto">
           <Box
             as="div"
             m="30px 0"
