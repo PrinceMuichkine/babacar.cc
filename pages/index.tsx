@@ -36,7 +36,7 @@ export default function Home() {
     handleNotationDisplay();
   }, []);
 
-  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR("/api/github", fetcher);
 
   return (

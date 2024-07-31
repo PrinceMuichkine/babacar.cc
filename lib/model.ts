@@ -28,7 +28,7 @@ export function loadGLTFModel(
       (gltf) => {
         const obj = gltf.scene;
         obj.name = 'dog';
-        obj.position.set(0, 0, 0); // Simplified positioning
+        obj.position.set(0, 0, 0);
         obj.receiveShadow = receiveShadow;
         obj.castShadow = castShadow;
         scene.add(obj);

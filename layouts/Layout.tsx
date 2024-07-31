@@ -3,9 +3,12 @@ import Navbar from "../components/nav/Navbar";
 import Footer from "./Footer";
 import { Analytics } from "@vercel/analytics/react";
 import ModelViewer from "../components/3dmodel/3dModel";
-import DarkModeSwitch from "../components/nav/DarkModeSwitch";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <Box as="main">
       <Flex

@@ -9,10 +9,21 @@ import {
 import NextLink from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
 import MenuHamburguer from "./Menu";
+import { ReactNode } from "react"; // Import ReactNode for typing
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href;
-  const color = useColorModeValue("black", "white");
+// Define the props for the LinkItem component
+interface LinkItemProps {
+  href: string; // Define href as a string
+  path: string; // Define path as a string
+  target?: string; // Define target as an optional string
+  children: ReactNode; // Define children as ReactNode
+  [key: string]: any; // Allow other props with any type
+}
+
+// LinkItem component
+const LinkItem: React.FC<LinkItemProps> = ({ href, path, target, children, ...props }) => {
+  const active = path === href; // Determine if the link is active
+  const color = useColorModeValue("black", "white"); // Set color based on color mode
 
   return (
     <Link
@@ -30,9 +41,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   );
 };
 
+// Navbar component
 const Navbar = () => {
-  const path = typeof window !== "undefined" ? window.location.pathname : "";
-  const color = useColorModeValue("black", "white");
+  const path = typeof window !== "undefined" ? window.location.pathname : ""; // Get the current path
+  const color = useColorModeValue("black", "white"); // Set color based on color mode
 
   const menuItems = [
     { href: "/", label: "home" },

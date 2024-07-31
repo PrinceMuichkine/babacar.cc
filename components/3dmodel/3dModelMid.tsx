@@ -8,6 +8,7 @@ const easeOutCirc = (x: number): number => {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
 };
 
+// code
 interface Props {
   children?: React.ReactNode;
 }

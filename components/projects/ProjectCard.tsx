@@ -52,7 +52,10 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
             boxShadow={boxShadowColor[colorMode]}
             borderRadius={5}
             border="2px solid transparent"
-            onMouseOver={() => { setOpacity(1), setLineColor(languageColor) }}
+            onMouseOver={() => {
+                setOpacity(1);
+                setLineColor(languageColor || "blue.500");
+            }}
             onMouseLeave={() => { setOpacity(0), setLineColor("blue.500") }}
             mt="20px"
         >

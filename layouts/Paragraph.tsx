@@ -1,7 +1,12 @@
-
 import { Text, useColorModeValue } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
-const Paragraph = ({ children, ...props }) => {
+interface ParagraphProps {
+  children: ReactNode;
+  [key: string]: any;
+}
+
+const Paragraph: React.FC<ParagraphProps> = ({ children, ...props }) => {
   const textColor = useColorModeValue("gray.600", "gray.400");
 
   return (
