@@ -114,7 +114,7 @@ export default function ProjectCard({
                 <Box>
                     <Heading as="h3" size="md" fontWeight="semibold" mb={2} color={textColor}>{title}</Heading>
                     <Box h={1} w="100%" bgColor={textColor} transition="background-color .3s ease-in-out" mb={2} mx="auto" />
-                    <Text fontSize={["sm", "md"]} color={textColor} mt={2}>{description}</Text>
+                    <Text fontSize={["md"]} color={textColor} mt={2}>{description}</Text>
                 </Box>
                 <Flex justify="space-between" mt={2} flexWrap="wrap">
                     <Flex align="center" mb={[2, 0]}>
