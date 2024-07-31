@@ -131,22 +131,22 @@ export default function Home() {
             {/* <ModelViewerMid /> */}
           </Box>
 
-          <SimpleGrid minChildWidth="280px" spacing="30px">
-            <ProjectCard
-              title="africanledger.com"
-              description="The African Ledger is an independent media dedicated to advancing democracy and economic justice."
-              repoHref="https://africanledger.com"
-              demoHref=""
-              languages={[
-                { name: "JavaScript", color: "#f7df1e" }]}
-              starCount={0}
-              stargazersUrl={""}
-              style={{
-                backgroundImage: "url('/images/africanledger.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            />
+          <SimpleGrid minChildWidth="280px" spacing={["30px", "40px"]} columns={[1, 1, 2]}>            <ProjectCard
+            title="africanledger.com"
+            description="The African Ledger is an independent media dedicated to advancing democracy and economic justice."
+            repoHref="https://africanledger.com"
+            demoHref=""
+            languages={[
+              { name: "JavaScript", color: "#f7df1e" }]}
+            starCount={0}
+            stargazersUrl={""}
+            style={{
+              backgroundImage: "url('/images/africanledger.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "283px",
+            }}
+          />
 
             <ProjectCard
               title="lomi."

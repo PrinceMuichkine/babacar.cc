@@ -33,10 +33,7 @@ const Footer = () => {
         textAlign="center"
       >
         <Text fontSize="11px" fontWeight="medium">
-          &copy; Babacar Diop {new Date().getFullYear()} —{" "}
-          <Link href="https://github.com/princemuichkine/babacar.cc.git" isExternal>
-            This website's code is public.
-          </Link>
+          &copy; Babacar Diop {new Date().getFullYear()}
         </Text>
         <ButtonGroup variant="ghost" spacing="0">
           <IconButton

@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <ChakraProvider theme={theme}>
         <Head>
           <link rel="icon" type="favicon" href="../static/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Layout>

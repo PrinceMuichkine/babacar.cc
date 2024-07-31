@@ -17,7 +17,7 @@ interface ProjectCardProps {
     description: string;
     repoHref: string;
     demoHref: string;
-    languages: { name: string; color: string }[]; // Ensure languages is defined here
+    languages: { name: string; color: string }[];
     starCount: number;
     stargazersUrl: string;
     languageColor?: string;
@@ -35,7 +35,10 @@ export default function ProjectCard({
     stargazersUrl,
     style,
     languages
-}: ProjectCardProps) {
+}:
+
+
+    ProjectCardProps) {
     const [isHovered, setIsHovered] = useState(false)
     const { colorMode } = useColorMode()
 
@@ -67,6 +70,8 @@ export default function ProjectCard({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             mt="20px"
+            height={["315px", "280px"]} // Consistent height for mobile and desktop
+            minWidth={["100%", "280px"]} // Add this line
             style={{
                 ...style,
                 position: 'relative',
@@ -99,7 +104,7 @@ export default function ProjectCard({
                 flexDir="column"
                 justify="space-between"
                 h="100%"
-                minHeight="280px"
+                w="100%"
                 opacity={isHovered ? 1 : 0}
                 transition="opacity .5s ease-in-out"
                 position="relative"

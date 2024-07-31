@@ -4,11 +4,7 @@ import Footer from "./Footer";
 import { Analytics } from "@vercel/analytics/react";
 import ModelViewer from "../components/3dmodel/3dModel";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children }) {
   return (
     <Box as="main">
       <Flex

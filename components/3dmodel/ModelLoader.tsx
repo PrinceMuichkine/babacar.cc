@@ -14,19 +14,24 @@ export const ModelSpinner = () => (
 interface DogContainerProps {
   children?: React.ReactNode;
 }
+
 export const ModelContainer = forwardRef<HTMLDivElement, DogContainerProps>(
   ({ children }, ref) => (
     <Box
       ref={ref}
       m="auto"
-      mt={["-20px", "-60px", "-100px"]}
-      mb={["-20px", "-60px", "-80px"]}
-      ml={[20, 40, -39]}
-      w={[300, 600, 760]}
-      h={[180, 480, 570]}
+      mt={["-20px", "-40px", "-60px"]}
+      mb={["-20px", "-40px", "-60px"]}
+      w={["90vw", "80vw", "70vw"]}
+      h={["90vw", "80vw", "70vw"]}
+      maxW={["300px", "500px", "675px"]}
+      maxH={["300px", "500px", "700px"]}
       position="relative"
       zIndex="0"
-      alignSelf={["center", "center", "center"]}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      alignSelf="center"
     >
       {children}
     </Box>

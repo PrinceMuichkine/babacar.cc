@@ -10,17 +10,22 @@
   color-scheme: dark only;
 }
 [data-theme=light],
+
 html {
   color-scheme: light only;
 }
+
 @media(prefers-color-scheme: dark) {
   html {
     color-scheme: dark only;
   }
 }
+
+
 [aria-pressed=true] path:nth-of-type(1) {
   display: none;
 }
+
 [aria-pressed=false] path:nth-of-type(2) {
   display: none;
 }
@@ -28,12 +33,12 @@ html {
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+flex-direction: column;
   min-height: 100vh;
   background: canvas;
   color: canvasText;
   align-content: center;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -129,4 +134,10 @@ button svg {
 
 button:is(:focus-visible, :hover) {
   --intent: 1;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
 }
