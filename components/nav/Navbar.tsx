@@ -63,8 +63,8 @@ const Navbar = () => {
         top="0"
         left="0"
         right="0"
-        zIndex={2}
-        css={{ backdropFilter: "blur(10px)" }}
+        zIndex={200}
+        css={{ backdropFilter: "blur(1px)" }}
       >
         <Container
           display="flex"
@@ -92,10 +92,11 @@ const Navbar = () => {
           </Flex>
           <DarkModeSwitch color={color} />
         </Container>
-      </Stack>
+      </Stack >
 
       {/* Spacer to push content below the navbar */}
-      <Box height={{ base: "60px", md: "80px" }} />
+      < Box height={{ base: "60px", md: "80px" }
+      } />
     </>
   );
 };

@@ -58,9 +58,8 @@ export default function ProjectCard({ title, description, repoHref, demoHref, la
             }}
             onMouseLeave={() => { setOpacity(0), setLineColor("blue.500") }}
             mt="20px"
+            height={["283px", "335px", "283px"]}
             width="100%"
-            maxWidth="400px"
-            mx="auto"
         >
             <Flex p={[5, 15, 25]} flexDir="column" justify="space-between" h="100%" minHeight="280px">
                 <Box>

@@ -72,8 +72,7 @@ export default function ProjectCard({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             mt="20px"
-            height={["283px", "335px", "283px"]}
-            width="100%"
+            height={["283px", "355px", "283px"]}
             style={{
                 ...style,
                 position: 'relative',
