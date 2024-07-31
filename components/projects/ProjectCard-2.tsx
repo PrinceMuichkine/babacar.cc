@@ -23,7 +23,9 @@ interface ProjectCardProps {
     languageColor?: string;
     language?: string;
     style?: React.CSSProperties;
+    height?: string | string[];
 }
+
 
 export default function ProjectCard({
     title,
@@ -34,7 +36,8 @@ export default function ProjectCard({
     starCount,
     stargazersUrl,
     style,
-    languages
+    languages,
+    height
 }:
 
 
@@ -52,7 +55,6 @@ export default function ProjectCard({
         dark: '0px 8px 26px rgba(0, 0, 0, 0.7)'
     }
 
-    // Determine text color and background overlay based on title
     const textColor = title === "africanledger.com" ? "white" : "black";
     const buttonColorScheme = title === "africanledger.com" ? "blue" : "blue";
     const bgOverlay = title === "africanledger.com"
@@ -62,16 +64,16 @@ export default function ProjectCard({
     return (
         <Flex
             flexDir="column"
-            _hover={{ transform: 'scale(1.05)', border: `2px solid ${languageColor}` }}
-            transition="all .5s ease-in-out"
+            _hover={{ transform: 'scale(1.02)', border: `2px solid ${languageColor}` }}
+            transition="all .3s ease-in-out"
             boxShadow={boxShadowColor[colorMode]}
             borderRadius={5}
             border="2px solid transparent"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             mt="20px"
-            height={["315px", "280px"]} // Consistent height for mobile and desktop
-            minWidth={["100%", "280px"]} // Add this line
+            height={["283px", "335px", "283px"]}
+            width="100%"
             style={{
                 ...style,
                 position: 'relative',
@@ -87,7 +89,7 @@ export default function ProjectCard({
                 backgroundImage={style?.backgroundImage}
                 backgroundSize="cover"
                 backgroundPosition="center"
-                transition="opacity .5s ease-in-out"
+                transition="opacity .3s ease-in-out"
                 opacity={1}
             />
             <Box
@@ -97,26 +99,26 @@ export default function ProjectCard({
                 right={0}
                 bottom={0}
                 backgroundColor={bgOverlay}
-                transition="background-color .5s ease-in-out"
+                transition="background-color .3s ease-in-out"
             />
             <Flex
-                p={[5, 15, 25]}
+                p={[3, 4, 5]}
                 flexDir="column"
                 justify="space-between"
                 h="100%"
                 w="100%"
                 opacity={isHovered ? 1 : 0}
-                transition="opacity .5s ease-in-out"
+                transition="opacity .3s ease-in-out"
                 position="relative"
                 zIndex={1}
             >
                 <Box>
                     <Heading as="h3" size="md" fontWeight="semibold" mb={2} color={textColor}>{title}</Heading>
-                    <Box h={1} w="100%" bgColor={textColor} transition="background-color .5s ease-in-out" mb={4} mx="auto" />
-                    <Text fontSize="medium" color={textColor} mt={4}>{description}</Text>
+                    <Box h={1} w="100%" bgColor={textColor} transition="background-color .3s ease-in-out" mb={2} mx="auto" />
+                    <Text fontSize={["sm", "md"]} color={textColor} mt={2}>{description}</Text>
                 </Box>
-                <Flex justify="space-between" mt={2}>
-                    <Flex align="center">
+                <Flex justify="space-between" mt={2} flexWrap="wrap">
+                    <Flex align="center" mb={[2, 0]}>
                         {stargazersUrl && (
                             <Link href={stargazersUrl.replace("api.", "").replace("repos/", "")} _hover={{ textDecor: 'none' }} isExternal>
                                 <Flex>
@@ -148,12 +150,12 @@ export default function ProjectCard({
                             </Link>
                         )}
                     </Flex>
-                    <Flex align="center" mt={2}>
-                        {languages.map((lang) => ( // Loop through languages
-                            <Box key={lang.name} w={3} h={3} mr={1} borderRadius="50%" bgColor={lang.color} />
+                    <Flex align="center" mt={[2, 0]}>
+                        {languages.map((lang) => (
+                            <Box key={lang.name} w={2} h={2} mr={1} borderRadius="50%" bgColor={lang.color} />
                         ))}
-                        <Text fontSize="sm" color={textColor} ml={2}>
-                            {languages.length > 0 ? languages[languages.length - 1].name : 'No Language'} {/* Display the last language */}
+                        <Text fontSize="xs" color={textColor} ml={1}>
+                            {languages.length > 0 ? languages[languages.length - 1].name : 'No Language'}
                         </Text>
                     </Flex>
                 </Flex>

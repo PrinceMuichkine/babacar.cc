@@ -84,7 +84,7 @@ export default function Home() {
         transition={{ duration: 0.7, delay: 0.4 }}
         style={{ position: "relative" }}
       >
-        <Flex justifyContent="space-around" style={{ position: "relative", zIndex: 10 }}> {/* Add inline style */}
+        <Flex justifyContent="space-around" style={{ position: "relative", zIndex: 10 }}>
           <Flex flexDir="column">
             <Heading as="h1" p="30px 0" fontSize={["1xl", "2xl"]}>
               Hi there, I&#39;m Babacar 👋🏼
@@ -93,7 +93,7 @@ export default function Home() {
               fontSize={["md"]}
               lineHeight={2}
               textAlign="justify"
-              color={colorMode === "dark" ? "white" : "black"} // Set color based on color mode
+              color={colorMode === "dark" ? "white" : "black"}
             >
               I'm a 24-year-old self-taught web developer and business professional based in West Africa, where I'm currently volunteering. I build mainly with JavaScript, Go and Python — you can learn more about my work <Link href="/work"><strong>here</strong></Link>.
             </Paragraph>
@@ -110,7 +110,7 @@ export default function Home() {
         </Flex>
 
         <Box as="div" m="30px 0"></Box>
-        <Box as="section" mb={20} id="featured-projects"> {/* Added id here */}
+        <Box as="section" mb={20} id="featured-projects">
           <Box
             as="div"
             m="30px 0"
@@ -128,25 +128,25 @@ export default function Home() {
             >
               Featured
             </Heading>
-            {/* <ModelViewerMid /> */}
           </Box>
 
-          <SimpleGrid minChildWidth="280px" spacing={["30px", "40px"]} columns={[1, 1, 2]}>            <ProjectCard
-            title="africanledger.com"
-            description="The African Ledger is an independent media dedicated to advancing democracy and economic justice."
-            repoHref="https://africanledger.com"
-            demoHref=""
-            languages={[
-              { name: "JavaScript", color: "#f7df1e" }]}
-            starCount={0}
-            stargazersUrl={""}
-            style={{
-              backgroundImage: "url('/images/africanledger.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: "283px",
-            }}
-          />
+          <SimpleGrid minChildWidth="280px" spacing={["20px", "30px"]} columns={[1, 1, 2]}>
+            <ProjectCard
+              title="africanledger.com"
+              description="The African Ledger is an independent media dedicated to advancing democracy and economic justice."
+              repoHref="https://africanledger.com"
+              demoHref=""
+              languages={[
+                { name: "JavaScript", color: "#f7df1e" }
+              ]}
+              starCount={0}
+              stargazersUrl={""}
+              style={{
+                backgroundImage: "url('/images/africanledger.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            />
 
             <ProjectCard
               title="lomi."
@@ -156,7 +156,6 @@ export default function Home() {
               languages={[
                 { name: "React", color: "#61dafb" },
                 { name: "JavaScript", color: "#f7df1e" }
-
               ]}
               starCount={0}
               stargazersUrl={""}
@@ -170,7 +169,6 @@ export default function Home() {
           </SimpleGrid>
         </Box>
 
-        {/* New Code Section */}
         <Box as="section" mb={20}>
           <Box
             as="div"
