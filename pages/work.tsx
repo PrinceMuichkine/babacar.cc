@@ -138,7 +138,7 @@ export default function WorkPage() {
             fontWeight="medium"
             letterSpacing="tighter"
           >
-            <Link href="/Resume_24.pdf" isExternal>
+            <Link href="/Resume.pdf" isExternal>
               and more...
             </Link>
           </Heading>
